@@ -3,10 +3,14 @@
   "scripts": {
     "mix": "webpack --progess --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "start": "cross-env NODE_ENV=development run-s \"mix --watch\"",
-    "build": "cross-env NODE_ENV=production run-s mix"
+    "build": "cross-env NODE_ENV=production run-s mix",
+    "storybook": "start-storybook -s ./public -p 6006"
   },
   "devDependencies": {
+    "@babel/core": "^7.6.4",
     "@babel/preset-react": "^7.6.3",
+    "@storybook/addon-docs": "^5.2.5",
+    "@storybook/react": "^5.2.5",
     "browser-sync": "^2.26.7",
     "browser-sync-webpack-plugin": "2.0.1",
     "cross-env": "^6.0.3",

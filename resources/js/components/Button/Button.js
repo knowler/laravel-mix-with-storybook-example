@@ -3,19 +3,20 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 
 const variants = {
-  primary: 'rounded px-3',
-  pill: 'rounded-full px-4',
+  primary: 'rounded',
+  pill: 'rounded-full',
 };
 
 const Button = ({ variant, ...props }) => (
   <button
     className={cx(
+      'px-4',
       'py-2',
       'bg-indigo-600',
       'hover:bg-indigo-500',
       'text-white',
       'font-semibold',
-      'shadow-inner',
+      'shadow',
       'hover:shadow-md',
       'transition-all',
       variants[variant],
